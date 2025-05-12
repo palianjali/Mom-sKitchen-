@@ -6,6 +6,8 @@ import img1 from './img1.avif'
 import img2 from './img2.png'
 import foods from './foods.jpg'
 import theam from './theam.png'
+import image from './image.png'
+import img3 from './img3.png'
 export const assets = {
     logo,
     logo2,
@@ -13,5 +15,7 @@ export const assets = {
     img1,
     foods,
     img2,
-    theam
+    theam,
+    image,
+    img3
 }

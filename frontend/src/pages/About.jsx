@@ -63,7 +63,7 @@ const About = () => {
     <>
       {/* Hero Section */}
       <div
-        className="relative mr-2 ml-2   lg:min-h-[100px] flex items-center justify-center text-gray-400 px-4 mt-2"
+        className="mr-2 ml-2   lg:min-h-[100px] flex items-center justify-center text-gray-400 px-4 mt-2 relative "
         //   style={{ backgroundImage: `url(${assets.foods})` }}
       >
         <motion.h1
