@@ -10,43 +10,41 @@ import { Minus, PenLine } from "lucide-react";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0 }
+  visible: { opacity: 1, y: 0 },
 };
 
 const testimonials = [
   {
     quote:
       "This app has made cooking so much easier for me. I love how it recommends recipes from the ingredients I already have!",
-    name: "— A Happy Mom"
+    name: "— A Happy Mom",
   },
   {
     quote:
       "Thanks to Mom’s Daily Kitchen, I no longer stress about planning meals every day!",
-    name: "— Busy Working Mom"
+    name: "— Busy Working Mom",
   },
   {
-    quote:
-      "Absolutely love the suggestions and how quick it is to use.",
-    name: "— Kitchen Enthusiast"
-  }
+    quote: "Absolutely love the suggestions and how quick it is to use.",
+    name: "— Kitchen Enthusiast",
+  },
 ];
 
 const faqs = [
   {
     question: "How does the app suggest recipes?",
     answer:
-      "The app uses AI to analyze the ingredients you enter and suggests recipes based on those items."
+      "The app uses AI to analyze the ingredients you enter and suggests recipes based on those items.",
   },
   {
     question: "Is this free to use?",
-    answer:
-      "Yes, Mom’s Daily Kitchen is completely free for users."
+    answer: "Yes, Mom’s Daily Kitchen is completely free for users.",
   },
   {
     question: "Can I save my favorite recipes?",
     answer:
-      "This feature is coming soon! You'll be able to bookmark and organize your favorite recipes."
-  }
+      "This feature is coming soon! You'll be able to bookmark and organize your favorite recipes.",
+  },
 ];
 
 const About = () => {
@@ -58,16 +56,16 @@ const About = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
-    arrows: false
+    arrows: false,
   };
 
   return (
     <>
       {/* Hero Section */}
-      <div className="relative mr-2 ml-2   lg:min-h-[100px] flex items-center justify-center text-gray-400 px-4 mt-2"
-    //   style={{ backgroundImage: `url(${assets.foods})` }}
+      <div
+        className="relative mr-2 ml-2   lg:min-h-[100px] flex items-center justify-center text-gray-400 px-4 mt-2"
+        //   style={{ backgroundImage: `url(${assets.foods})` }}
       >
-        
         <motion.h1
           initial="hidden"
           whileInView="visible"
@@ -76,7 +74,10 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="relative z-10 text-4xl sm:text-5xl md:text-4xl font-serif text-center"
         >
-          ABOUT <span className="text-black">US<hr></hr></span>
+          ABOUT{" "}
+          <span className="text-black">
+            US<hr></hr>
+          </span>
         </motion.h1>
       </div>
 
@@ -100,7 +101,9 @@ const About = () => {
 
           <div className="w-full lg:w-1/2 bg-yellow-50 p-6 md:p-8 rounded-lg shadow-md text-center lg:text-left">
             <p className="mb-5 text-base md:text-lg leading-relaxed text-gray-700">
-              Mom’s Daily Kitchen is an AI-powered assistant that helps moms discover new recipes based on the ingredients they already have. It’s designed to make cooking easier, quicker, and more fun.
+              Mom’s Daily Kitchen is an AI-powered assistant that helps moms
+              discover new recipes based on the ingredients they already have.
+              It’s designed to make cooking easier, quicker, and more fun.
             </p>
             <ul className="list-disc list-inside text-base md:text-lg space-y-2 text-left text-gray-700">
               <li>Ingredient-based recipe suggestions</li>
@@ -133,9 +136,12 @@ const About = () => {
         className="w-full bg-gray-100 py-12 px-4 flex justify-center"
       >
         <div className="max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 poppins-bold text-yellow-700">Our Mission</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 poppins-bold text-yellow-700">
+            Our Mission
+          </h2>
           <p className="text-lg leading-relaxed text-gray-700">
-            To make everyday cooking easier, joyful, and smarter by empowering moms with personalized recipe suggestions using the power of AI.
+            To make everyday cooking easier, joyful, and smarter by empowering
+            moms with personalized recipe suggestions using the power of AI.
           </p>
         </div>
       </motion.div>
@@ -150,9 +156,14 @@ const About = () => {
         className="w-full bg-white py-12 px-4 flex justify-center"
       >
         <div className="max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-yellow-700">Meet the Inspiration</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-yellow-700">
+            Meet the Inspiration
+          </h2>
           <p className="text-lg leading-relaxed text-gray-700">
-            Mom’s Daily Kitchen was inspired by my mother’s passion for cooking and the daily challenge of deciding “what to cook today.” This tool is made with love to support moms like her with smart, helpful suggestions.
+            Mom’s Daily Kitchen was inspired by my mother’s passion for cooking
+            and the daily challenge of deciding “what to cook today.” This tool
+            is made with love to support moms like her with smart, helpful
+            suggestions.
           </p>
         </div>
       </motion.div>
@@ -171,7 +182,9 @@ const About = () => {
             {testimonials.map((t, index) => (
               <div key={index} className="text-center px-4">
                 <p className="italic text-lg text-gray-800">"{t.quote}"</p>
-                <span className="block text-sm font-medium text-right mt-4 text-gray-700">{t.name}</span>
+                <span className="block text-sm font-medium text-right mt-4 text-gray-700">
+                  {t.name}
+                </span>
               </div>
             ))}
           </Slider>
@@ -191,7 +204,8 @@ const About = () => {
           Join Our Community of Smart Cooks
         </h2>
         <p className="text-xl sm:text-2xl text-white mb-8">
-          Become part of a growing community of moms who make cooking easier and more enjoyable every day.
+          Become part of a growing community of moms who make cooking easier and
+          more enjoyable every day.
         </p>
         <motion.a
           whileHover={{ scale: 1.05 }}
@@ -225,7 +239,9 @@ const About = () => {
                 <div className="flex-1 border-t-2 border-gray-300"></div>
               </div>
               <div className="text-xl text-gray-700 mt-4">
-                <strong>Launched the beta version of Mom's Daily Kitchen</strong>
+                <strong>
+                  Launched the beta version of Mom's Daily Kitchen
+                </strong>
               </div>
             </div>
             <div className="timeline-item">
@@ -242,7 +258,7 @@ const About = () => {
             <div className="timeline-item">
               <div className="flex justify-center items-center gap-6">
                 <div className="w-15 h-15 bg-yellow-500  text-white rounded-full flex items-center justify-center text-xl font-bold">
-                  2024 
+                  2024
                 </div>
                 <div className="flex-1 border-t-2 border-gray-300"></div>
               </div>
@@ -264,11 +280,15 @@ const About = () => {
         className="w-full bg-white py-12 px-4 flex justify-center"
       >
         <div className="max-w-4xl w-full">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-center text-yellow-700">FAQs & Cooking Tips</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-center text-yellow-700">
+            FAQs & Cooking Tips
+          </h2>
           <div className="space-y-6">
             {faqs.map((faq, index) => (
               <div key={index}>
-                <h3 className="font-semibold text-lg text-gray-800">Q: {faq.question}</h3>
+                <h3 className="font-semibold text-lg text-gray-800">
+                  Q: {faq.question}
+                </h3>
                 <p className="text-gray-700 mt-1">A: {faq.answer}</p>
               </div>
             ))}
@@ -286,7 +306,9 @@ const About = () => {
         className="w-full bg-gray-100 py-10 px-4 flex justify-center"
       >
         <div className="max-w-4xl text-center">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-yellow-700">Connect With Us</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-yellow-700">
+            Connect With Us
+          </h2>
           <div className="flex justify-center gap-6 text-gray-700 text-2xl">
             <a href="https://facebook.com">
               <FaFacebookF />
