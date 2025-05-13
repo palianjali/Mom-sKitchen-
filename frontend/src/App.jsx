@@ -15,11 +15,11 @@ const App = () => {
     <Routes>
       {/* Public Landing Page */}
       <Route path="/" element={<Hero />} />
-
-      {/* Public Login Page
+{/* 
+      Public Login Page */}
       <Route path="/login" element={<Login />} />
 
-      <Route path="/signup" element={<Signup />} /> */}
+      <Route path="/signup" element={<Signup />} />
 
       {/* Private Routes */}
       <Route
