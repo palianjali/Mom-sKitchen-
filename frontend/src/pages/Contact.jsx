@@ -14,10 +14,10 @@ function Contact() {
 
   return (
     <>
-      <div className="min-h-screen items-center justify-center px-4 mt-4">
+      <div className="min-h-screen items-center justify-center px-4 mt-15 scroll-">
         <div>
           <motion.h1
-            className="text-center mb-5 text-5xl font-serif font-medium"
+            className="text-center mb-8 text-5xl font-serif font-medium prata-regular"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
