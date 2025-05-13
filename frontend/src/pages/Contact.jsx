@@ -14,7 +14,7 @@ function Contact() {
 
   return (
     <>
-      <div className="min-h-screen items-center justify-center px-4 mt-15 scroll-">
+      <div className="min-h-screen items-center justify-center px-4 mt-45">
         <div>
           <motion.h1
             className="text-center mb-8 text-5xl font-serif font-medium prata-regular"
