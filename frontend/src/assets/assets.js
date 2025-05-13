@@ -17,5 +17,6 @@ export const assets = {
     img2,
     theam,
     image,
-    img3
+    img3,
+    
 }

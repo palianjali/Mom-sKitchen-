@@ -64,16 +64,18 @@ const initialTestimonials = [
     review:
       "I recommended it to my sister and now the whole family uses it. It's a must-have if you like cooking.",
     rating: 5,
-  }
+  },
 ];
 
 const TestimonialCard = ({ name, image, title, review, rating }) => (
   <div className="bg-gray-50 rounded-2xl p-6 shadow-lg h-96 w-72 flex flex-col justify-between">
     <div>
       <div className="flex mb-2 text-orange-400 text-lg">
-        {Array(rating || 5).fill("★").map((star, idx) => (
-          <span key={idx}>{star}</span>
-        ))}
+        {Array(rating || 5)
+          .fill("★")
+          .map((star, idx) => (
+            <span key={idx}>{star}</span>
+          ))}
       </div>
       <h3 className="text-lg font-bold mb-2 text-gray-900">{title}</h3>
       <p className="text-gray-700 leading-relaxed text-sm mb-4 break-words whitespace-pre-line">
@@ -116,7 +118,10 @@ const ReviewForm = ({ onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-xl mx-auto mt-16 p-6 bg-gray-100 rounded-xl shadow-md">
+    <form
+      onSubmit={handleSubmit}
+      className="max-w-xl mx-auto mt-16 p-6 bg-gray-100 rounded-xl shadow-md"
+    >
       <h2 className="text-2xl font-bold mb-4 text-center">Add Your Review</h2>
       <div className="mb-4">
         <label className="block mb-1 font-medium">Name</label>
@@ -157,7 +162,9 @@ const ReviewForm = ({ onSubmit }) => {
               key={num}
               type="button"
               onClick={() => handleRatingClick(num)}
-              className={formData.rating >= num ? "text-orange-500" : "text-gray-300"}
+              className={
+                formData.rating >= num ? "text-orange-500" : "text-gray-300"
+              }
             >
               ★
             </button>

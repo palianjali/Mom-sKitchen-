@@ -121,7 +121,7 @@ const DailyCookingChallenge = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto px-4 p-40">
       <h1 className="text-3xl sm:text-4xl font-extrabold text-center font-serif text-gray-800 mb-10">
         🍽️ Daily Cooking Challenges 😋
       </h1>

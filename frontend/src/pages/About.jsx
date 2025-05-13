@@ -63,7 +63,7 @@ const About = () => {
     <>
       {/* Hero Section */}
       <div
-        className="mr-2 ml-2   lg:min-h-[100px] flex items-center justify-center text-gray-400 px-4 mt-2 relative"
+        className="mr-2 ml-2   lg:min-h-[100px] flex items-center justify-center text-gray-400 px-4 py-40  mt-2 relative"
         //   style={{ backgroundImage: `url(${assets.foods})` }}
       >
         <motion.h1
@@ -88,7 +88,7 @@ const About = () => {
         viewport={{ once: true }}
         variants={fadeInUp}
         transition={{ duration: 0.8 }}
-        className="w-full flex justify-center bg-white text-gray-800 px-4 py-12"
+        className="w-full flex justify-center bg-white text-gray-800 px-4"
       >
         <div className="w-full max-w-6xl flex flex-col lg:flex-row items-center gap-10">
           <div className="w-full lg:w-1/2">
