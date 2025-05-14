@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Review from "./ReviewForm";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -29,14 +30,15 @@ const Home = () => {
             community!
           </p>
 
-          <button
+          <NavLink
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="relative px-8 py-3 text-lg font-semibold text-white rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 shadow-lg hover:shadow-xl transition-all duration-300"
+            to='/search'
           >
             Explore Now
             <span className="absolute inset-0 rounded-full animate-ping bg-white opacity-10 pointer-events-none"></span>
-          </button>
+          </NavLink>
         </motion.div>
       </div>
       <div>

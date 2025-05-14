@@ -77,6 +77,8 @@ import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 
+import SearchRecipe from "./pages/SearchRecipe";
+
 const App = () => {
   const location = useLocation();
 
@@ -96,6 +98,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/challenge" element={<DailyCookingChallenge />} />
+        <Route path="/search" element={<SearchRecipe />} />
       </Routes>
     </>
   );

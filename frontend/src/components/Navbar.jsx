@@ -295,6 +295,7 @@ const Navbar = () => {
           >
             Contact
           </NavLink>
+         
         </ul>
 
         {/* Profile Icon & Mobile Menu */}
