@@ -1,4 +1,4 @@
-// backend/routes/ai-Routes.js
+// backend/routes/aiRoutes.js
 const express = require('express');
 const router = express.Router();
 const aiController = require('../controllers/aiController');
