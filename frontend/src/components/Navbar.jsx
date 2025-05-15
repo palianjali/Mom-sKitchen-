@@ -219,7 +219,7 @@ const Navbar = () => {
   const [visible, setVisible] = useState(false);
   const [showLogout, setShowLogout] = useState(false);
   const location = useLocation();
-  const navigate = useNavigate();
+  const navigate =  useNavigate();
 
   // Check if current route is homepage
   const isHome = location.pathname === "/" || location.pathname === "/home";
@@ -228,7 +228,7 @@ const Navbar = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
     navigate("/login");
-    
+
   };
 
   return (
