@@ -1,7 +1,23 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-
+import { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import axios from 'axios';
 const Signup = () => {
+  const [form, setForm] = useState({ fullname: "", email: "", password: "" });
+  const [message, setMessage] = useState("");
+  const navigate = useNavigate();
+  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try{
+      const res = await axios.post('http://localhost:5000/api/signup', form);
+      setMessage(res.data.message);
+    }catch(err){
+      setMessage(err.response?.data?.message || 'user already exist');
+    }
+  }
+
   return (
     <div className="flex justify-center items-center h-screen bg-gray-100">
       <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
@@ -10,10 +26,13 @@ const Signup = () => {
           Please sign up to create a new account
         </p>
 
-        <form action="#">
+        <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <input
               type="text"
+              name="fullname"
+              value={form.fullname}
+              onChange={handleChange}
               placeholder="Full Name"
               className="w-full p-2 border border-gray-300 rounded"
               required
@@ -22,6 +41,9 @@ const Signup = () => {
           <div className="mb-4">
             <input
               type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
               placeholder="Email Address"
               className="w-full p-2 border border-gray-300 rounded"
               required
@@ -30,19 +52,22 @@ const Signup = () => {
           <div className="mb-4">
             <input
               type="password"
+              name="password"
+              value={form.password}
+              onChange={handleChange}
               placeholder="Password"
               className="w-full p-2 border border-gray-300 rounded"
               required
             />
           </div>
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <input
               type="password"
               placeholder="Confirm Password"
               className="w-full p-2 border border-gray-300 rounded"
               required
             />
-          </div>
+          </div> */}
 
           <div className="mb-4">
             <input

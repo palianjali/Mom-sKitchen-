@@ -210,19 +210,26 @@
 
 // // export default Navbar;
 
-
-
 import React, { useState } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { assets } from "../assets/assets";
 import { Menu, UserRound, X } from "lucide-react";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
+  const [showLogout, setShowLogout] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   // Check if current route is homepage
-  const isHome = location.pathname === "/" || location.pathname === "/home" || location.pathname === "/review";
+  const isHome = location.pathname === "/" || location.pathname === "/home";
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+    navigate("/login");
+    
+  };
 
   return (
     <div
@@ -236,7 +243,7 @@ const Navbar = () => {
           <img
             src={assets.logo2}
             alt="Logo"
-            className="w-22 hover:scale-105 transition-transform duration-300"
+            className="w-22 hover:scale-105 transition-transform duration-300 mr-5"
           />
         </Link>
       </div>
@@ -295,16 +302,34 @@ const Navbar = () => {
           >
             Contact
           </NavLink>
-         
         </ul>
 
-        {/* Profile Icon & Mobile Menu */}
-        <div className="gap-4 flex items-center hover:bg-green-100 p-2 rounded-full cursor-pointer transition duration-300">
-          <UserRound
-            size={30}
-            className="text-gray-700 hover:text-green-600 transition duration-300"
-          />
+        {/* Profile Icon with Logout Dropdown */}
+        <div
+          className="relative"
+          onMouseEnter={() => setShowLogout(true)}
+          onMouseLeave={() => setShowLogout(false)}
+        >
+          <div className="gap-4 flex items-center hover:bg-green-100 p-2 rounded-full cursor-pointer transition duration-300">
+            <UserRound
+              size={30}
+              className="text-gray-700 hover:text-green-600 transition duration-300"
+            />
+          </div>
+
+          {showLogout && (
+            <div className="absolute top-12 right-0 bg-white border rounded-md shadow-md py-2 px-4 z-50">
+              <button
+                onClick={handleLogout}
+                className="text-red-600 font-medium hover:underline"
+              >
+                Logout
+              </button>
+            </div>
+          )}
         </div>
+
+        {/* Mobile Menu Icon */}
         <Menu
           className="sm:hidden cursor-pointer"
           onClick={() => setVisible(true)}
@@ -352,6 +377,15 @@ const Navbar = () => {
           >
             Contact
           </NavLink>
+          <button
+            onClick={() => {
+              setVisible(false);
+              handleLogout();
+            }}
+            className="py-2 px-6 text-left text-red-600 hover:bg-red-100"
+          >
+            Logout
+          </button>
         </div>
       </div>
     </div>
