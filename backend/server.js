@@ -36,7 +36,7 @@ app.get('/api/profile', auth, (req, res) => {
 
 // MongoDB connection
 mongoose.connect(
-  process.env.MONGO_URI,
+  process.env.URI,
   { useNewUrlParser: true, useUnifiedTopology: true }
 ).then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
