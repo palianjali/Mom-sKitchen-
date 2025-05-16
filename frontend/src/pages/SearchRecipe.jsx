@@ -117,7 +117,7 @@ const SearchRecipe = () => {
   return (
     <div
       className="min-h-screen bg-cover bg-center bg-fixed flex flex-col items-center justify-center px-4 py-10"
-      style={{ backgroundImage: `url(${assets.img5})` }}
+      style={{ backgroundImage: `url(${assets.img7})` }}
     >
       <h1 className="text-4xl font-bold text-black mb-10 drop-shadow-lg mt-25 prata-regular">AI Recipe Generator</h1>
 
