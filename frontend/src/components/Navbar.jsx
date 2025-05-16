@@ -222,7 +222,7 @@ const Navbar = () => {
   const navigate =  useNavigate();
 
   // Check if current route is homepage
-  const isHome = location.pathname === "/" || location.pathname === "/home" || location.pathname === '/search';
+  const isHome = location.pathname === "/" || location.pathname === "/home";
 
   const handleLogout = () => {
     localStorage.removeItem("token");
