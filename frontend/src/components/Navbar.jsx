@@ -595,6 +595,8 @@ const Navbar = () => {
     location.pathname === "/home" ||
     location.pathname === "/search";
 
+    const search = location.pathname === '/serch';
+
   const handleLogout = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
@@ -611,7 +613,7 @@ const Navbar = () => {
       <div>
         <Link to="/">
           <img
-            src={assets.logo2}
+             src={search ? assets.img3 : assets.logo2}
             alt="Logo"
             className="w-22 hover:scale-105 transition-transform duration-300 mr-5"
           />
