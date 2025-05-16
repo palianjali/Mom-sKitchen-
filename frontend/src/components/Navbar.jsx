@@ -243,7 +243,7 @@ const Navbar = () => {
           <img
             src={assets.logo2}
             alt="Logo"
-            className="w-22 hover:scale-105 transition-transform duration-300 mr-5"
+            className="w-22 hover:scale-105 transition-transform duration-300 mr-5 text-white"
           />
         </Link>
       </div>
