@@ -799,7 +799,7 @@ const Navbar = () => {
       </Link>
 
       {/* Navigation Links - Desktop */}
-      <ul className="hidden sm:flex gap-6 text-lg text-gray-700 font-medium">
+      <ul className="hidden sm:flex gap-6 text-lg text-white font-medium">
         {["/home", "/challenge", "/about", "/contact"].map((path, idx) => {
           const name = ["Home", "Get-Challenge", "About Us", "Contact"][idx];
           return (
