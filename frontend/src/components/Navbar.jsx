@@ -420,7 +420,7 @@ const Navbar = () => {
   return (
     <div
       className={`fixed right-0 top-0 left-0 z-50 flex justify-center items-center py-3 px-6 shadow-md transition-all duration-300 ${
-        isTransparentNavbar ? "bg-transparent" : "bg-white"
+        isTransparentNavbar ? "bg-transparent text-white" : "bg-white"
       }`}
     >
       {/* Logo Section */}
@@ -429,7 +429,7 @@ const Navbar = () => {
           <img
             src={assets.logo2}
             alt="Logo"
-            className="w-22 hover:scale-105 transition-transform duration-300 mr-5"
+            className="w-22 hover:scale-105 transition-transform duration-300 mr-5 tex-white bg-white"
           />
         </Link>
       </div>
