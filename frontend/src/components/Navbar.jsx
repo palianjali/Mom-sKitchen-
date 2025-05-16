@@ -626,7 +626,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               `px-3 py-1 rounded-md transition duration-300 ${
                 isActive
-                  ? "bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-black"
+                  ? "bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white"
                   : "hover:bg-green-200 hover:text-green-600 hover:font-serif"
               }`
             }
@@ -638,7 +638,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               `px-3 py-1 rounded-md transition duration-300 ${
                 isActive
-                  ? "bg-green-500 font-serif text-black"
+                  ? "bg-green-500 text-white font-serif"
                   : "hover:bg-green-200 hover:text-green-600"
               }`
             }
@@ -650,7 +650,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               `px-3 py-1 rounded-md transition duration-300 ${
                 isActive
-                  ? "bg-green-500 text-black font-serif "
+                  ? "bg-green-500 text-white font-serif"
                   : "hover:bg-green-200 hover:text-green-600"
               }`
             }
@@ -662,7 +662,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               `px-3 py-1 rounded-md transition duration-300 ${
                 isActive
-                  ? "bg-green-500 text-black font-serif"
+                  ? "bg-green-500 text-white font-serif"
                   : "hover:bg-green-200 hover:text-green-600"
               }`
             }
