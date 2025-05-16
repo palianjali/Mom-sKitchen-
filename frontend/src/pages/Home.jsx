@@ -34,7 +34,7 @@ const Home = () => {
           <NavLink
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="relative px-8 py-3 text-lg font-semibold text-white rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 shadow-lg hover:shadow-xl transition-all duration-300"
+            className="relative px-8 py-3 text-lg font-semibold text-white rounded-full bg-gradient-to-r from-pink-600 via-red-500 to-yellow-500 shadow-lg hover:shadow-xl transition-all duration-300"
             to='/search'
           >
             Explore Now
