@@ -595,7 +595,7 @@ const Navbar = () => {
     location.pathname === "/home" ||
     location.pathname === "/search";
 
-    const search = location.pathname === '/serch';
+    const search = location.pathname === '/search';
 
   const handleLogout = () => {
     localStorage.removeItem("token");
