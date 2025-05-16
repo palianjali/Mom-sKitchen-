@@ -119,7 +119,7 @@ const SearchRecipe = () => {
       className="min-h-screen bg-cover bg-center bg-fixed flex flex-col items-center justify-center px-4 py-10"
       style={{ backgroundImage: `url(${assets.img8})` }}
     >
-      <h1 className="text-4xl font-bold text-black mb-10 drop-shadow-lg mt-25 prata-regular">AI Recipe Generator</h1>
+      <h1 className="text-4xl font-bold text-white mb-10 drop-shadow-lg mt-25 prata-regular">AI Recipe Generator</h1>
 
       <form
         onSubmit={handleSubmit}
