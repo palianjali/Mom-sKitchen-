@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Review from "./ReviewForm";
 import { NavLink } from "react-router-dom";
+import Slider from "./Slider";
 
 const Home = () => {
   return (
@@ -42,6 +43,7 @@ const Home = () => {
         </motion.div>
       </div>
       <div>
+        <Slider/>
         <Review/>
       </div>
     </div>
