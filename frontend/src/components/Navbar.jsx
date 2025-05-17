@@ -819,7 +819,7 @@ const Navbar = () => {
       <div>
         <Link to="/">
           <img
-            src={search ? assets.img3 : assets.logo2}
+            src={search & !scrolled ? assets.img3 : assets.logo2}
             alt="Logo"
             className="w-22 hover:scale-105 transition-transform duration-300 mr-5"
           />
