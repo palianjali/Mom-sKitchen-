@@ -11,13 +11,14 @@ const recipeRoutes = require("./routes/recipeRoutes");
 const auth = require("./middleware/auth");
 const signupRoutes = require("./routes/signup");
 const loginRoutes = require("./routes/login");
+const contactRoutes = require('./routes/contactRoutes')
 
 const app = express();
 
 // ✅ Fix CORS: Allow Vercel frontend explicitly
 app.use(cors({
   origin: "https://mom-s-kitchen-eight.vercel.app", // Frontend domain
-  credentials: true,
+  credentials: true,  
 }));
 
 app.use(express.json());
@@ -28,6 +29,7 @@ app.use("/api", aiRoutes);
 app.use("/api/recipes", recipeRoutes);
 app.use("/api/signup", signupRoutes);
 app.use("/api/login", loginRoutes);
+app.use('/api/contact', contactRoutes);
 
 // Protected route example
 app.get('/api/profile', auth, (req, res) => {
