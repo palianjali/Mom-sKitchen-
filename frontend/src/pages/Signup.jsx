@@ -135,7 +135,7 @@ const Signup = () => {
         </p>
 
         {message && (
-          <div className="mb-4 text-center text-sm text-red-600">{message}</div>
+          <div className="mb-4 text-center text-sm text-green-600">{message}</div>
         )}
 
         <form onSubmit={handleSubmit}>
