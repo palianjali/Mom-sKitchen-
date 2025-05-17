@@ -81,8 +81,7 @@ const sampleChallenges = [
 
 const DailyCookingChallenge = () => {
   const [challenges, setChallenges] = useState(sampleChallenges);
-  // const [showDetails, setShowDetails] = useState({});
-  const [showDetails, setShowDetails] = useState(null);
+  const [showDetails, setShowDetails] = useState({});
   const [comments, setComments] = useState({});
   const [newComment, setNewComment] = useState({});
 
@@ -95,12 +94,11 @@ const DailyCookingChallenge = () => {
     localStorage.setItem("challenge-comments", JSON.stringify(comments));
   }, [comments]);
 
-  // const toggleDetails = (id) => {
-  //   setShowDetails((prev) => ({ ...prev, [id]: !prev[id] }));
-  // };
   const toggleDetails = (id) => {
-    setShowDetails((prevId) => (prevId === id ? null : id));
+    setShowDetails((prev) => ({ ...prev, [id]: !prev[id] }));
   };
+  
+
 
   const handleLike = (id) => {
     setChallenges((prev) =>
@@ -249,3 +247,4 @@ const DailyCookingChallenge = () => {
 };
 
 export default DailyCookingChallenge;
+
