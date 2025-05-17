@@ -3,9 +3,9 @@ import { assets } from "../assets/assets";
 
 const Slider = () => {
   const images = [
-    assets.img13,
-    assets.img15,
-    assets.img16,
+    // assets.img13,
+    // assets.img15,
+    // assets.img16,
     assets.sl1,
     assets.sl2,
     assets.sl3,
