@@ -43,8 +43,10 @@ const Home = () => {
         </motion.div>
       </div>
       <div>
-        <Slider/>
         <Review/>
+      </div>
+      <div>
+        <Slider/>
       </div>
     </div>
   );
