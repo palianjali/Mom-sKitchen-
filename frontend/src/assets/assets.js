@@ -14,7 +14,7 @@ import img6 from './img6.jpg'
 import img7 from './img7.jpg'
 import img8 from './img8.jpg'
 import img9 from './img9.jpg'
-import img13 from './img13.jpg'
+// import img13 from './img13.jpg'
 import img15 from './img15.jpg'
 import img16 from './img16.jpg'
 import sl1 from './sl1.jpg'
@@ -47,7 +47,7 @@ export const assets = {
     img7,
     img8,
     img9,
-    img13,
+    // img13,
     img15,
     img16,
     sl1,
