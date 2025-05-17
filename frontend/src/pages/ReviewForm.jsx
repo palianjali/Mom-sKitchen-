@@ -33,38 +33,6 @@ const initialTestimonials = [
       "Clean interface, intuitive design, and everything I need to plan meals stress-free. My weekly routine just got so much easier.",
     rating: 5,
   },
-  {
-    name: "James Lee",
-    image: "https://randomuser.me/api/portraits/men/70.jpg",
-    title: "Perfect for busy families",
-    review:
-      "I’ve saved hours every week. It’s simple enough for my kids to use too. I never forget ingredients anymore!",
-    rating: 4,
-  },
-  {
-    name: "Nina Patel",
-    image: "https://randomuser.me/api/portraits/women/33.jpg",
-    title: "Fantastic support",
-    review:
-      "Anytime I’ve had an issue, the support team was responsive and helpful. Plus, I love the constant new features!",
-    rating: 5,
-  },
-  {
-    name: "Ben Carter",
-    image: "https://randomuser.me/api/portraits/men/71.jpg",
-    title: "Time saver!",
-    review:
-      "Meal prep used to take forever. Now it’s smooth, quick, and kinda fun. I’ve never eaten this healthy before.",
-    rating: 4,
-  },
-  {
-    name: "Lara Mendes",
-    image: "https://randomuser.me/api/portraits/women/38.jpg",
-    title: "Highly recommend",
-    review:
-      "I recommended it to my sister and now the whole family uses it. It's a must-have if you like cooking.",
-    rating: 5,
-  },
 ];
 
 const TestimonialCard = ({ name, image, title, review, rating }) => (
