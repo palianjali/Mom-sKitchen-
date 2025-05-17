@@ -176,7 +176,7 @@ const DailyCookingChallenge = () => {
               onClick={() => toggleDetails(challenge.id)}
               className="text-sm text-indigo-600 hover:underline flex items-center gap-1 mb-2"
             >
-              {showDetails === challenge.id ? (
+              {showDetails[challenge.id] ? (
                 <>
                   Hide Details <ChevronUp size={16} />
                 </>
@@ -187,7 +187,7 @@ const DailyCookingChallenge = () => {
               )}
             </button>
 
-            {showDetails === challenge.id  && (
+            {showDetails[challenge.id] && (
               <div className="mt-2 text-sm text-gray-700">
                 <div className="mb-3">
                   <h3 className="font-semibold">Ingredients:</h3>
