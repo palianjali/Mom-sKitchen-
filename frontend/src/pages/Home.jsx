@@ -43,10 +43,10 @@ const Home = () => {
         </motion.div>
       </div>
       <div>
-        <Review/>
+        <Slider/>
       </div>
       <div>
-        <Slider/>
+        <Review/>
       </div>
     </div>
   );
