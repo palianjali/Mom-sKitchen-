@@ -7,6 +7,7 @@ import {
   ChevronUp,
   Clock,
 } from "lucide-react";
+import DailyFoods from "./DailyFoods";
 
 const sampleChallenges = [
   // ... your same data here ...
@@ -242,6 +243,9 @@ const DailyCookingChallenge = () => {
             )}
           </div>
         ))}
+      </div>
+      <div>
+        <DailyFoods/>
       </div>
     </div>
   );
