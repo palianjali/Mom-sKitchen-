@@ -37,17 +37,7 @@ const Home = () => {
             className="relative px-8 py-3 text-lg font-semibold text-white rounded-full bg-gradient-to-r from-pink-600 via-red-500 to-yellow-500 shadow-lg hover:shadow-xl transition-all duration-300"
             to='/search'
           >
-            Explore Now
-            <span className="absolute inset-0 rounded-full animate-ping bg-white opacity-10 pointer-events-none"></span>
-          </NavLink>
-
-           <NavLink
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="relative px-8 py-3 text-lg font-semibold text-white rounded-full bg-gradient-to-r from-pink-600 via-red-500 to-yellow-500 shadow-lg hover:shadow-xl transition-all duration-300"
-            to='/dailyfood'
-          >
-            Explore Now
+            Today's Special
             <span className="absolute inset-0 rounded-full animate-ping bg-white opacity-10 pointer-events-none"></span>
           </NavLink>
         </motion.div>
