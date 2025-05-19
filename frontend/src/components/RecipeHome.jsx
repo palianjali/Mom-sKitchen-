@@ -12,6 +12,7 @@ const fadeInUp = {
 };
 const RecipeHome = () => {
   const [data, setData] = useState(null);
+
   useEffect(() => {
     fetchDailyRecipe().then((res) => {
       setData(res.data);
