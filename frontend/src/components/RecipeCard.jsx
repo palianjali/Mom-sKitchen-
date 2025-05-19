@@ -4,7 +4,7 @@ import React from 'react';
 const RecipeCard = ({ recipe }) => {
   const { title, ingredients, instructions, image } = recipe;
   return (
-    <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col mt-50">
+    <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col mt-30">
       {image && <img src={image} alt={title} className="rounded-xl mb-4 h-48 w-full object-cover" />}
       <h2 className="text-xl font-semibold mb-2">{title}</h2>
 
