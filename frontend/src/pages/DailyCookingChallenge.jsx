@@ -127,6 +127,7 @@ const DailyCookingChallenge = () => {
       <h1 className="text-3xl sm:text-4xl font-extrabold text-center font-serif text-gray-800 mb-10">
         🍽️ Daily Cooking Challenges 😋
       </h1>
+      
 
       <div className="grid gap-9 sm:grid-cols-2 lg:grid-cols-3">
         {challenges.map((challenge) => (

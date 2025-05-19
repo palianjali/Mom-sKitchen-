@@ -30,7 +30,7 @@ import sl17 from './sl17.jpg'
 import sl18 from './sl18.jpg'
 import sl19 from './sl19.jpg'
 import sl20 from './sl20.jpg'
-
+import chefimg02 from './chefimg02.png'
 export const assets = {
     logo,
     logo2,
@@ -62,5 +62,6 @@ export const assets = {
     sl17,
     sl18,
     sl19,
-    sl20
+    sl20,
+    chefimg02
 }
