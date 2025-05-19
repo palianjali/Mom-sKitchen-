@@ -1,6 +1,6 @@
 import React from "react";
-import RecipeHome from "../components/RecipeHome";
 import { assets } from "../assets/assets";
+import RecipeHome from "../components/RecipeHome";
 
 
 const dayName = new Date().toLocaleDateString("en-US", { weekday: "long" });
@@ -23,7 +23,7 @@ if (hour >= 5 && hour < 12) {
 const DailyFoods = () => {
   return (
     <>
-      <div className="fixed mt-25 w-full bg-fuchsia-200 z-10 p-4 flex items-center justify-center gap-5 shadow">
+      <div className="mt-25 w-full bg-fuchsia-200 z-10 p-4 flex items-center justify-center gap-5 shadow">
         <div className="flex flex-col gap-1 font-serif">
           <h1 className="text-4xl font-bold">Mom's Daily Kitchen</h1>
           <h1 className="text-2xl font-medium">
