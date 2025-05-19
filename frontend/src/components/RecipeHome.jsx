@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { fetchDailyRecipe } from "../services/api";
 import RecipeCard from "../components/RecipeCard";
 import Lottie from "lottie-react";
