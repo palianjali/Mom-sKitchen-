@@ -10,6 +10,7 @@ import Login from "./pages/Login"; // Add this
 import PrivateRoute from "./components/PrivateRoute";
 import Signup from "./pages/Signup";
 import SearchRecipe from './pages/SearchRecipe'
+import RecipeHome from "./components/RecipeHome";
 
 const App = () => {
   return (
@@ -69,7 +70,18 @@ const App = () => {
           </PrivateRoute>
         }
       />
+         <Route
+        path="/dailyfood"
+        element={
+          <PrivateRoute>
+            <Navbar />
+            <RecipeHome />
+          </PrivateRoute>
+        }
+      />
     </Routes>
+
+    
   );
 };
 

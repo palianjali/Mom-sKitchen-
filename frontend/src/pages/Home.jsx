@@ -13,7 +13,7 @@ const Home = () => {
       }}
     >
       {/* Content */}
-      <div className="relative w-full z-10 flex items-center justify-center h-full px-6 text-center">
+      <div className="relative w-full z-10 flex items-center justify-center h-full px-6 text-center gap-5">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ const Home = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="relative px-8 py-3 text-lg font-semibold text-white rounded-full bg-gradient-to-r from-pink-600 via-red-500 to-yellow-500 shadow-lg hover:shadow-xl transition-all duration-300"
-            to='/search'
+            to='/dailyfood'
           >
             Explore Now
             <span className="absolute inset-0 rounded-full animate-ping bg-white opacity-10 pointer-events-none"></span>
