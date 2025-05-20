@@ -14,7 +14,8 @@ const loginRoutes = require("./routes/login");
 const contactRoutes = require('./routes/contactRoutes')
 
 const app = express();
-
+// Use this to allow both localhost (for dev) and Vercel (for production)
+const allowedOrigins = ['http://localhost:5174', 'https://mom-s-kitchen-eight.vercel.app'];
 // ✅ Fix CORS: Allow Vercel frontend explicitly
 app.use(cors({
   origin: "https://mom-s-kitchen-eight.vercel.app", // Frontend domain

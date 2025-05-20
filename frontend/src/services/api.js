@@ -1,5 +1,5 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:5000/api/recipes' });
+const API = axios.create({ baseURL: 'https://mom-skitchen-02.onrender.com/api/recipes' });
 
 export const fetchDailyRecipe = () => API.get('/daily');
